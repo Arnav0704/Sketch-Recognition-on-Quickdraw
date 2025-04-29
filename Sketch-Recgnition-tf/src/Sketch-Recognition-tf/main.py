@@ -9,7 +9,7 @@ import threading
 import time 
 
 # --- Configuration --- 
-MODEL_PATH = "/mnt/d/model/quick_draw/LSTM/best_stroke_lstm_model_final.keras"  # Path to your saved model
+MODEL_PATH = "model_path"  # Path to your saved model
 MAX_LEN = 196
 CLASSES = [
     "apple", "banana", "book", "car", "cat", "chair", "cloud", "dog", "door", "eye",
@@ -19,7 +19,7 @@ CLASSES = [
 NUM_CLASSES = len(CLASSES)
 
 # IMPORTANT: Use the exact values printed during your training!
-MEAN_VALS = np.array([3.0792246, 2.8368876], dtype=np.float32)
+MEAN_VALS = np.array([3.0792246, 2.8368876], dtype=np.float32) # use your own mean and std 
 STD_VALS = np.array([36.755478, 37.947872], dtype=np.float32)
 
 # Add a small epsilon to std dev to prevent division by zero
