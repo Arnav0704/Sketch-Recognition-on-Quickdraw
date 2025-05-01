@@ -1,5 +1,5 @@
 [project]
-name = "Sketch_Recognition"
+name = "sketch_recognition_tf"
 version = "0.1.0"
 description = ""
 authors = [
@@ -25,7 +25,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "test", from = "src"}]
+packages = [{include = "sketch_recognition_tf", from = "src"}]
 
 
 [build-system]
